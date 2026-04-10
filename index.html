@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="ProspectTrack">
-<title>ProspectTrack</title>
+<title>Ziarat</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root{--bg:#0f1117;--surface:#1a1d27;--surface2:#22263a;--accent:#f97316;--text:#f1f5f9;--muted:#64748b;--success:#22c55e;--warning:#eab308;--danger:#ef4444;--border:#2d3350;--radius:14px;}
@@ -76,7 +76,7 @@
   .stat-label{font-size:.65rem;color:var(--muted);margin-top:2px;}
 
   /* FAB */
-  .fab{position:fixed;bottom:72px;right:calc(50% - 230px);width:54px;height:54px;border-radius:50%;background:var(--accent);border:none;color:white;font-size:1.6rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(249,115,22,.4);z-index:99;transition:transform .15s;}
+  .fab{position:fixed;bottom:72px;right: 16px;width:54px;height:54px;border-radius:50%;background:var(--accent);border:none;color:white;font-size:1.6rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(249,115,22,.4);z-index:99;transition:transform .15s;}
   .fab:active{transform:scale(.92);}
 
   /* MODAL */
@@ -150,7 +150,7 @@
 <body>
 
 <div id="app-loader">
-  <div class="loader-title">Prospect<span>Track</span></div>
+  <div class="loader-title">Ziarat<span>Track</span></div>
   <div class="loader-spin"></div>
   <div class="loader-msg" id="loader-msg">Connexion à Supabase…</div>
 </div>
@@ -167,7 +167,7 @@
 
 <div id="app" style="display:none">
   <div class="topbar">
-    <div class="topbar-title">Prospect<span>Track</span></div>
+    <div class="topbar-title">Ziarat<span>Track</span></div>
     <div class="topbar-right">
       <span id="status-dot"></span>
       <button class="sync-btn" id="sync-btn" onclick="syncAll()" title="Synchroniser">
@@ -285,7 +285,7 @@
 
     <div class="divider"></div>
     <div style="font-family:Syne;font-size:.8rem;font-weight:700;color:var(--accent);margin-bottom:12px;">👤 Personne rencontrée</div>
-    <label>Nom de la personne (optionnel)</label><input id="v-contact-nom" placeholder="Ex: Marie Martin">
+    <label>Nom de la personne</label><input id="v-contact-nom" placeholder="Ex: Marie Martin">
     <label>Téléphone (optionnel)</label><input id="v-contact-tel" placeholder="Ex: 06 12 34 56 78" type="tel">
     <div class="divider"></div>
 
